@@ -1,0 +1,125 @@
+@font-face {
+  font-family: football;
+  src: url(../ITC-Novarese-Std-Bold.ttf);
+}
+body {
+  font-family: football;
+}
+.background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00000059;
+}
+.control-buttons .your-name {
+  border: 3px solid transparent;
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(to bottom right, #e817f7, #0d3d78) border-box;
+}
+.control-buttons .your-name input {
+  font-family: football;
+  height: 70px;
+  top: 29%;
+  caret-color: #0d3d78;
+  color: #0d3d78;
+  border: 1px solid transparent;
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(to right, #0d3d78, #e817f7) border-box;
+}
+.control-buttons .your-name img {
+  height: 110px;
+  width: unset;
+}
+.control-buttons .your-name div {
+  top: 43%;
+  color: #0d3d78;
+  font-size: 20px;
+}
+.side-bar .difficulty p {
+  font-size: 26px;
+}
+.memory-game-blocks .game-block .face {
+  border: 1px solid white;
+}
+.side-bar .easy,
+.side-bar .medium {
+  background: linear-gradient(#151515, #151515) padding-box,
+    linear-gradient(to right, #0d3d78, #e817f7) border-box;
+}
+.side-bar .difficulty {
+  color: white;
+  border: 2px solid white;
+  background: unset;
+}
+.side-bar .difficulty:hover {
+  background-image: linear-gradient(to right bottom, #0d3d78, #e817f7);
+}
+.side-bar .hard {
+  background-image: linear-gradient(to right bottom, #0d3d78, #e817f7);
+}
+.control-buttons span {
+  padding: 18px 18px;
+  font-size: 28px;
+  color: white;
+  background-image: linear-gradient(to right, #0d3d78, #0d3d78);
+  transition: 0.3s;
+  border: 2px solid white;
+}
+.control-buttons span:hover {
+  background-image: linear-gradient(to right, #0d3d78, #e817f7);
+}
+
+.control-buttons .your-name span {
+  font-size: 25px;
+}
+.volumeControl i {
+  color: white;
+  background-image: linear-gradient(to right, #0d3d78, #0d3d78);
+  border: 2px solid white;
+}
+.volumeControl i:hover {
+  background-image: linear-gradient(to left, #0d3d78, #e817f7);
+}
+.info-container {
+  font-size: 22px;
+  border: 2px solid white;
+  background-image: linear-gradient(to right, #0d3d78, #e817f7);
+  color: white;
+  position: relative;
+}
+.main-btn {
+  font-size: 26px;
+  color: white;
+  background-image: linear-gradient(to right, #0d3d78, #0d3d78);
+  border: 2px solid white;
+}
+.main-btn:hover {
+  background-image: linear-gradient(to right, #0d3d78, #e817f7);
+}
+.endVideo .endVideoContainer {
+  border-color: #0d3d78;
+}
+.endVideo .endVideoContainer a {
+  font-size: 20px;
+  color: #0d3d78;
+  border: 3px solid transparent;
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(to right, #0d3d78, #e817f7) border-box;
+}
+.endVideo .endVideoContainer a p,
+.endVideo .endVideoContainer a i {
+  color: unset;
+}
+.endVideo .endVideoContainer a:hover {
+  background: linear-gradient(to right, #0d3d78, #e817f7) padding-box,
+    linear-gradient(to left, #0d3d78, #e817f7) border-box;
+  background-color: unset;
+  color: white;
+}
+.endVideo .endVideoContainer a:hover i,
+.endVideo .endVideoContainer a:hover p {
+  color: white;
+}

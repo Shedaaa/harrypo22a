@@ -1,0 +1,20 @@
+.side-bar .medium {
+  background: linear-gradient(to bottom, #5c0808, #7f0909) padding-box,
+    linear-gradient(to bottom, #7f0909, #5c0808) border-box;
+  pointer-events: none;
+}
+.side-bar .hard,
+.side-bar .easy {
+  background: linear-gradient(#151515, #151515) padding-box,
+    linear-gradient(to bottom, #7f0909, #5c0808) border-box;
+  pointer-events: unset;
+}
+
+.memory-game-blocks {
+  width: 942px;
+}
+
+.memory-game-blocks .game-block {
+  height: 137px;
+  flex: 1 0 137px;
+}

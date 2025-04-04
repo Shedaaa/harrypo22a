@@ -1,0 +1,14 @@
+@font-face {
+  font-family: movies;
+  src: url(../TheGodfather-v2.ttf);
+}
+body {
+  font-family: movies;
+}
+.control-buttons .your-name input {
+  font-family: movies;
+}
+.control-buttons .your-name img {
+  height: 150px;
+  width: unset;
+}

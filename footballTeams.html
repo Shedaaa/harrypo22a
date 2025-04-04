@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="imgs/football/ucl.ico" />
+    <title>Football Teams</title>
+    <link rel="stylesheet" href="CSS/all.min.css" />
+    <link rel="stylesheet" href="CSS/harryPotter.css" />
+    <link rel="stylesheet" href="CSS/football.css" />
+  </head>
+  <body>
+    <div class="background">
+      <video
+        src="imgs/football/footballBackground.mp4"
+        muted
+        autoplay
+        loop
+        preload=""
+      ></video>
+    </div>
+    <!--  -->
+    <audio loop id="audio">
+      <source src="audio/football.mp3" type="audio/mpeg" />
+    </audio>
+    <div class="volumeControl">
+      <i class="fa-solid fa-volume-high" id="volumeIcon"></i>
+      <input type="range" id="volume-control" value="100" />
+    </div>
+    <!--  -->
+    <div class="control-buttons">
+      <span>Start Game</span>
+      <div class="your-name">
+        <img src="imgs/football/uefaLogo.png" alt="" />
+        <input type="text" />
+        <div>Your Name</div>
+        <span>Start</span>
+      </div>
+    </div>
+    <!--  -->
+    <!-- Side Bar -->
+    <div class="side-bar">
+      <a href="" class="main-btn">HOME</a>
+      <a href="moviesEasy.html" class="difficulty easy">
+        <div class="stars">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+        </div>
+        <p>Easy</p>
+      </a>
+      <a href="moviesMed.html" class="difficulty medium">
+        <div class="stars">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+        </div>
+        <p>Medium</p>
+      </a>
+      <a href="#" class="difficulty hard">
+        <div class="stars">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <p>Hard</p>
+      </a>
+    </div>
+    <!--  -->
+    <!-- Info Bar -->
+    <div class="info-container">
+      <div class="name">Hola: <span></span></div>
+      <div class="tries">Wrong Tries: <span>0</span></div>
+    </div>
+    <!--  -->
+    <!-- The Game -->
+    <div class="memory-game-blocks">
+      <div class="game-block" data-character="realmadrid">
+        <div class="face front">
+          <img src="imgs/football/00.blockBack.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="imgs/football/01.realmadrid.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-character="realmadrid">
+        <div class="face front">
+          <img src="imgs/football/00.blockBack.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="imgs/football/01.realmadrid.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-character="barcelona">
+        <div class="face front">
+          <img src="imgs/football/00.blockBack.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="imgs/football/02.barcelona.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-character="barcelona">
+        <div class="face front">
+          <img src="imgs/football/00.blockBack.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="imgs/football/02.barcelona.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-character="atleticoMadrid">
+        <div class="face front">
+          <img src="imgs/football/00.blockBack.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="imgs/football/03.atleticoMadrid.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-character="atleticoMadrid">
+        <div class="face front">
+          <img src="imgs/football/00.blockBack.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="imgs/football/03.atleticoMadrid.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-character="liverpool">
+        <div class="face front">
+          <img src="imgs/football/00.blockBack.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="imgs/football/04.liverpool.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-character="liverpool">
+        <div class="face front">
+          <img src="imgs/football/00.blockBack.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="imgs/football/04.liverpool.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-character="rangers">
+        <div class="face front">
+          <img src="imgs/football/00.blockBack.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="imgs/football/05.rangers.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-character="rangers">
+        <div class="face front">
+          <img src="imgs/football/00.blockBack.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="imgs/football/05.rangers.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-character="manUtd">
+        <div class="face front">
+          <img src="imgs/football/00.blockBack.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="imgs/football/06.manUtd.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-character="manUtd">
+        <div class="face front">
+          <img src="imgs/football/00.blockBack.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="imgs/football/06.manUtd.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-character="manCity">
+        <div class="face front">
+          <img src="imgs/football/00.blockBack.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="imgs/football/07.manCity.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-character="manCity">
+        <div class="face front">
+          <img src="imgs/football/00.blockBack.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="imgs/football/07.manCity.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-character="arsenal">
+        <div class="face front">
+          <img src="imgs/football/00.blockBack.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="imgs/football/08.arsenal.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-character="arsenal">
+        <div class="face front">
+          <img src="imgs/football/00.blockBack.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="imgs/football/08.arsenal.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-character="chelsea">
+        <div class="face front">
+          <img src="imgs/football/00.blockBack.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="imgs/football/09.chelsea.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-character="chelsea">
+        <div class="face front">
+          <img src="imgs/football/00.blockBack.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="imgs/football/09.chelsea.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-character="tottenham">
+        <div class="face front">
+          <img src="imgs/football/00.blockBack.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="imgs/football/10.tottenham.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-character="tottenham">
+        <div class="face front">
+          <img src="imgs/football/00.blockBack.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="imgs/football/10.tottenham.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-character="astonVilla">
+        <div class="face front">
+          <img src="imgs/football/00.blockBack.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="imgs/football/11.astonVilla.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-character="astonVilla">
+        <div class="face front">
+          <img src="imgs/football/00.blockBack.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="imgs/football/11.astonVilla.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-character="nottinghamForest">
+        <div class="face front">
+          <img src="imgs/football/00.blockBack.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="imgs/football/12.nottinghamForest.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-character="nottinghamForest">
+        <div class="face front">
+          <img src="imgs/football/00.blockBack.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="imgs/football/12.nottinghamForest.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-character="psg">
+        <div class="face front">
+          <img src="imgs/football/00.blockBack.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="imgs/football/13.psg.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-character="psg">
+        <div class="face front">
+          <img src="imgs/football/00.blockBack.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="imgs/football/13.psg.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-character="bayernMunchen">
+        <div class="face front">
+          <img src="imgs/football/00.blockBack.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="imgs/football/14.bayernMunchen.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-character="bayernMunchen">
+        <div class="face front">
+          <img src="imgs/football/00.blockBack.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="imgs/football/14.bayernMunchen.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-character="dortmund">
+        <div class="face front">
+          <img src="imgs/football/00.blockBack.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="imgs/football/15.dortmund.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-character="dortmund">
+        <div class="face front">
+          <img src="imgs/football/00.blockBack.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="imgs/football/15.dortmund.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-character="milan">
+        <div class="face front">
+          <img src="imgs/football/00.blockBack.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="imgs/football/16.milan.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-character="milan">
+        <div class="face front">
+          <img src="imgs/football/00.blockBack.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="imgs/football/16.milan.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-character="interMilan">
+        <div class="face front">
+          <img src="imgs/football/00.blockBack.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="imgs/football/17.interMilan.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-character="interMilan">
+        <div class="face front">
+          <img src="imgs/football/00.blockBack.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="imgs/football/17.interMilan.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-character="juventus">
+        <div class="face front">
+          <img src="imgs/football/00.blockBack.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="imgs/football/18.juventus.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-character="juventus">
+        <div class="face front">
+          <img src="imgs/football/00.blockBack.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="imgs/football/18.juventus.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-character="porto">
+        <div class="face front">
+          <img src="imgs/football/00.blockBack.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="imgs/football/19.porto.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-character="porto">
+        <div class="face front">
+          <img src="imgs/football/00.blockBack.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="imgs/football/19.porto.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-character="ajax">
+        <div class="face front">
+          <img src="imgs/football/00.blockBack.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="imgs/football/20.ajax.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-character="ajax">
+        <div class="face front">
+          <img src="imgs/football/00.blockBack.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="imgs/football/20.ajax.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-character="marseille">
+        <div class="face front">
+          <img src="imgs/football/00.blockBack.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="imgs/football/21.marseille.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-character="marseille">
+        <div class="face front">
+          <img src="imgs/football/00.blockBack.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="imgs/football/21.marseille.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-character="psv">
+        <div class="face front">
+          <img src="imgs/football/00.blockBack.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="imgs/football/22.psv.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-character="psv">
+        <div class="face front">
+          <img src="imgs/football/00.blockBack.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="imgs/football/22.psv.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-character="benfica">
+        <div class="face front">
+          <img src="imgs/football/00.blockBack.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="imgs/football/23.benfica.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-character="benfica">
+        <div class="face front">
+          <img src="imgs/football/00.blockBack.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="imgs/football/23.benfica.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-character="celtic">
+        <div class="face front">
+          <img src="imgs/football/00.blockBack.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="imgs/football/24.celtic.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-character="celtic">
+        <div class="face front">
+          <img src="imgs/football/00.blockBack.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="imgs/football/24.celtic.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <audio id="success" src="audio/success.mp3" preload="auto"></audio>
+    <audio id="fail" src="audio/fail.mp3" preload="auto"></audio>
+    <div class="endVideo">
+      <div class="endVideoContainer">
+        <div class="video-screen">
+          <img src="imgs/HarryPotter/screen.png" alt="" />
+          <video src="imgs/Movies/endVideo.mp4" preload="auto"></video>
+        </div>
+        <div class="buttons">
+          <a href="">Play Again</a>
+          <a href="moviesEasy.html" class="difficulty easy">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <p>Easy</p>
+          </a>
+          <a href="moviesMed.html" class="difficulty medium">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <p>Medium</p>
+          </a>
+        </div>
+        <a href="">Home</a>
+      </div>
+    </div>
+    <!-- LOL
+        FOOTBALL CLUBS
+        MOVIE'S CHARACTERS
+        ANIMY
+        -->
+    <script src="JS/main.js"></script>
+    <!-- <script src="JS/all.min.js"></script> -->
+  </body>
+</html>

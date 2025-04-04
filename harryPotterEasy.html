@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="imgs/HarryPotter/favicon.png"
+    />
+    <title>Harry Potter</title>
+    <link rel="stylesheet" href="CSS/all.min.css" />
+    <link rel="stylesheet" href="CSS/harryPotter.css" />
+    <link rel="stylesheet" href="CSS/harryPotterEasy.css" />
+  </head>
+  <body>
+    <div class="background">
+      <video
+        src="imgs/HarryPotter/harryPotterBackground.mp4"
+        muted
+        autoplay
+        loop
+      ></video>
+    </div>
+    <!--  -->
+    <audio loop id="audio">
+      <source src="audio/harryPotter.mp3" type="audio/mpeg" />
+    </audio>
+    <div class="volumeControl">
+      <i class="fa-solid fa-volume-high" id="volumeIcon"></i>
+      <input type="range" id="volume-control" value="100" />
+    </div>
+    <!--  -->
+    <div class="control-buttons">
+      <span>Start Game</span>
+      <div class="your-name">
+        <img src="imgs/HarryPotter/Hogwarts-Logo.png" alt="" />
+        <input type="text" />
+        <div>Your Name</div>
+        <span>Start</span>
+      </div>
+    </div>
+    <!--  -->
+    <!-- Side Bar -->
+    <div class="side-bar">
+      <a href="" class="main-btn">HOME</a>
+      <a href="" class="difficulty easy">
+        <div class="stars">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+        </div>
+        <p>Easy</p>
+      </a>
+      <a href="harryPotterMedium.html" class="difficulty medium">
+        <div class="stars">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+        </div>
+        <p>Medium</p>
+      </a>
+      <a href="harryPotterHard.html" class="difficulty hard">
+        <div class="stars">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <p>Hard</p>
+      </a>
+    </div>
+    <!--  -->
+    <!-- Info Bar -->
+    <div class="info-container">
+      <div class="name">Hola: <span></span></div>
+      <div class="tries">Wrong Tries: <span>0</span></div>
+    </div>
+    <!--  -->
+    <!-- The Game -->
+    <div class="memory-game-blocks">
+      <div class="game-block" data-character="AlbusDumbledore">
+        <div class="face front">
+          <img src="imgs/HarryPotter/hogwartsLogo.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="imgs/HarryPotter/AlbusDumbledore.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-character="AlbusDumbledore">
+        <div class="face front">
+          <img src="imgs/HarryPotter/hogwartsLogo.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="imgs/HarryPotter/AlbusDumbledore.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-character="DracoMalfoy">
+        <div class="face front">
+          <img src="imgs/HarryPotter/hogwartsLogo.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="imgs/HarryPotter/DracoMalfoy.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-character="DracoMalfoy">
+        <div class="face front">
+          <img src="imgs/HarryPotter/hogwartsLogo.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="imgs/HarryPotter/DracoMalfoy.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-character="Hagrid">
+        <div class="face front">
+          <img src="imgs/HarryPotter/hogwartsLogo.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="imgs/HarryPotter/Hagrid.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-character="Hagrid">
+        <div class="face front">
+          <img src="imgs/HarryPotter/hogwartsLogo.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="imgs/HarryPotter/Hagrid.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-character="HarryPotter">
+        <div class="face front">
+          <img src="imgs/HarryPotter/hogwartsLogo.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="imgs/HarryPotter/HarryPotter.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-character="HarryPotter">
+        <div class="face front">
+          <img src="imgs/HarryPotter/hogwartsLogo.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="imgs/HarryPotter/HarryPotter.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-character="HermioneGranger">
+        <div class="face front">
+          <img src="imgs/HarryPotter/hogwartsLogo.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="imgs/HarryPotter/HermioneGranger.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-character="HermioneGranger">
+        <div class="face front">
+          <img src="imgs/HarryPotter/hogwartsLogo.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="imgs/HarryPotter/HermioneGranger.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-character="LunaLovegood">
+        <div class="face front">
+          <img src="imgs/HarryPotter/hogwartsLogo.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="imgs/HarryPotter/LunaLovegood.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-character="LunaLovegood">
+        <div class="face front">
+          <img src="imgs/HarryPotter/hogwartsLogo.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="imgs/HarryPotter/LunaLovegood.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-character="MinervaMcGonagall">
+        <div class="face front">
+          <img src="imgs/HarryPotter/hogwartsLogo.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="imgs/HarryPotter/MinervaMcGonagall.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-character="MinervaMcGonagall">
+        <div class="face front">
+          <img src="imgs/HarryPotter/hogwartsLogo.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="imgs/HarryPotter/MinervaMcGonagall.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-character="ProfessorSnape">
+        <div class="face front">
+          <img src="imgs/HarryPotter/hogwartsLogo.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="imgs/HarryPotter/ProfessorSnape.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-character="ProfessorSnape">
+        <div class="face front">
+          <img src="imgs/HarryPotter/hogwartsLogo.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="imgs/HarryPotter/ProfessorSnape.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-character="RonWeasley">
+        <div class="face front">
+          <img src="imgs/HarryPotter/hogwartsLogo.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="imgs/HarryPotter/RonWeasley.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-character="RonWeasley">
+        <div class="face front">
+          <img src="imgs/HarryPotter/hogwartsLogo.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="imgs/HarryPotter/RonWeasley.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-character="Voldemort">
+        <div class="face front">
+          <img src="imgs/HarryPotter/hogwartsLogo.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="imgs/HarryPotter/Voldemort.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-character="Voldemort">
+        <div class="face front">
+          <img src="imgs/HarryPotter/hogwartsLogo.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="imgs/HarryPotter/Voldemort.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <audio id="success" src="audio/success.mp3" preload="auto"></audio>
+    <audio id="fail" src="audio/fail.mp3" preload="auto"></audio>
+    <div class="endVideo">
+      <div class="endVideoContainer">
+        <div class="video-screen">
+          <img src="imgs/HarryPotter/screen.png" alt="" />
+          <video
+            src="imgs/HarryPotter/always2.mp4"
+            preload="auto"
+            controls
+          ></video>
+        </div>
+        <div class="buttons">
+          <a href="">Play Again</a>
+          <a href="harryPotterMedium.html" class="difficulty medium">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <p>Medium</p>
+          </a>
+          <a href="harryPotterHard.html" class="difficulty hard">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p>Hard</p>
+          </a>
+        </div>
+        <a href="">Home</a>
+      </div>
+    </div>
+    <!-- LOL
+        FOOTBALL CLUBS
+        MOVIE'S CHARACTERS
+        ANIMY
+        -->
+    <script src="JS/main.js"></script>
+    <!-- <script src="JS/all.min.js"></script> -->
+  </body>
+</html>

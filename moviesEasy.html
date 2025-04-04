@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="imgs/Movies/favicon.png" />
+    <title>Movies</title>
+    <link rel="stylesheet" href="CSS/all.min.css" />
+    <link rel="stylesheet" href="CSS/harryPotter.css" />
+    <link rel="stylesheet" href="CSS/harryPotterEasy.css" />
+    <link rel="stylesheet" href="CSS/movies.css" />
+  </head>
+  <body>
+    <div class="background">
+      <video src="imgs/Movies/background.mp4" muted autoplay loop></video>
+    </div>
+    <!--  -->
+    <audio loop id="audio">
+      <source src="audio/movies.mp3" type="audio/mpeg" />
+    </audio>
+    <div class="volumeControl">
+      <i class="fa-solid fa-volume-high" id="volumeIcon"></i>
+      <input type="range" id="volume-control" value="100" />
+    </div>
+    <!--  -->
+    <div class="control-buttons">
+      <span>Start Game</span>
+      <div class="your-name">
+        <img src="imgs/Movies/oscar.png" alt="" />
+        <input type="text" />
+        <div>Your Name</div>
+        <span>Start</span>
+      </div>
+    </div>
+    <!--  -->
+    <!-- Side Bar -->
+    <div class="side-bar">
+      <a href="" class="main-btn">HOME</a>
+      <a href="" class="difficulty easy">
+        <div class="stars">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+        </div>
+        <p>Easy</p>
+      </a>
+      <a href="moviesMed.html" class="difficulty medium">
+        <div class="stars">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+        </div>
+        <p>Medium</p>
+      </a>
+      <a href="moviesHard.html" class="difficulty hard">
+        <div class="stars">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <p>Hard</p>
+      </a>
+    </div>
+    <!--  -->
+    <!-- Info Bar -->
+    <div class="info-container">
+      <div class="name">Hola: <span></span></div>
+      <div class="tries">Wrong Tries: <span>0</span></div>
+    </div>
+    <!--  -->
+    <!-- The Game -->
+    <div class="memory-game-blocks">
+      <div class="game-block" data-character="oppenheimer">
+        <div class="face front">
+          <img src="imgs/Movies/00.blocksBackground.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="imgs/Movies/01.oppenheimer.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-character="oppenheimer">
+        <div class="face front">
+          <img src="imgs/Movies/00.blocksBackground.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="imgs/Movies/01.oppenheimer.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-character="coda">
+        <div class="face front">
+          <img src="imgs/Movies/00.blocksBackground.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="imgs/Movies/02.coda.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-character="coda">
+        <div class="face front">
+          <img src="imgs/Movies/00.blocksBackground.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="imgs/Movies/02.coda.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-character="parasite">
+        <div class="face front">
+          <img src="imgs/Movies/00.blocksBackground.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="imgs/Movies/03.parasite.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-character="parasite">
+        <div class="face front">
+          <img src="imgs/Movies/00.blocksBackground.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="imgs/Movies/03.parasite.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-character="slumdogMillionar">
+        <div class="face front">
+          <img src="imgs/Movies/00.blocksBackground.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="imgs/Movies/04.slumdogMillionar.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-character="slumdogMillionar">
+        <div class="face front">
+          <img src="imgs/Movies/00.blocksBackground.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="imgs/Movies/04.slumdogMillionar.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-character="noCountryForOldMen">
+        <div class="face front">
+          <img src="imgs/Movies/00.blocksBackground.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="imgs/Movies/05.noCountryForOldMen.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-character="noCountryForOldMen">
+        <div class="face front">
+          <img src="imgs/Movies/00.blocksBackground.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="imgs/Movies/05.noCountryForOldMen.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-character="miliionDollarBaby">
+        <div class="face front">
+          <img src="imgs/Movies/00.blocksBackground.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="imgs/Movies/06.miliionDollarBaby.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-character="miliionDollarBaby">
+        <div class="face front">
+          <img src="imgs/Movies/00.blocksBackground.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="imgs/Movies/06.miliionDollarBaby.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-character="lordOfTheRings">
+        <div class="face front">
+          <img src="imgs/Movies/00.blocksBackground.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="imgs/Movies/07.lordOfTheRings.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-character="lordOfTheRings">
+        <div class="face front">
+          <img src="imgs/Movies/00.blocksBackground.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="imgs/Movies/07.lordOfTheRings.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-character="aBeautifulMind">
+        <div class="face front">
+          <img src="imgs/Movies/00.blocksBackground.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="imgs/Movies/08.aBeautifulMind.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-character="aBeautifulMind">
+        <div class="face front">
+          <img src="imgs/Movies/00.blocksBackground.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="imgs/Movies/08.aBeautifulMind.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-character="gladiator">
+        <div class="face front">
+          <img src="imgs/Movies/00.blocksBackground.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="imgs/Movies/09.gladiator.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-character="gladiator">
+        <div class="face front">
+          <img src="imgs/Movies/00.blocksBackground.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="imgs/Movies/09.gladiator.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-character="titanic">
+        <div class="face front">
+          <img src="imgs/Movies/00.blocksBackground.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="imgs/Movies/10.titanic.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-character="titanic">
+        <div class="face front">
+          <img src="imgs/Movies/00.blocksBackground.png" alt="" />
+        </div>
+        <div class="face back">
+          <img src="imgs/Movies/10.titanic.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <audio id="success" src="audio/success.mp3" preload="auto"></audio>
+    <audio id="fail" src="audio/fail.mp3" preload="auto"></audio>
+    <div class="endVideo">
+      <div class="endVideoContainer">
+        <div class="video-screen">
+          <img src="imgs/HarryPotter/screen.png" alt="" />
+          <video src="imgs/Movies/endVideo.mp4" preload="auto"></video>
+        </div>
+        <div class="buttons">
+          <a href="">Play Again</a>
+          <a href="moviesMed.html" class="difficulty medium">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <p>Medium</p>
+          </a>
+          <a href="moviesHard.html" class="difficulty hard">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p>Hard</p>
+          </a>
+        </div>
+        <a href="">Home</a>
+      </div>
+    </div>
+    <!-- LOL
+        FOOTBALL CLUBS
+        MOVIE'S CHARACTERS
+        ANIMY
+        -->
+    <script src="JS/main.js"></script>
+    <!-- <script src="JS/all.min.js"></script> -->
+  </body>
+</html>
